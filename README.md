@@ -118,8 +118,7 @@ You got it!
 
 **[+] J.A.V.A.**
 
-Sir, you need to observe the traffic with Snort and identify the anomaly first. Then you can create a rule to stop the reverse shell. GOOD LUCK!
-10.10.196.55 any <> 10.10.144.156 4444
+**Sir, you need to observe the traffic with Snort and identify the anomaly first. Then you can create a rule to stop the reverse shell. GOOD LUCK!**
 
 1. Open **Terminal**, and run Snort in sniffer mode using the following command:
 ```sudo snort -Xe```
@@ -149,3 +148,5 @@ Sir, you need to observe the traffic with Snort and identify the anomaly first. 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
+
+10.10.196.55 any <> 10.10.144.156 4444
