@@ -61,6 +61,8 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 * **Soucre Port:** 22
 
 6. Open **File Manager**, and navigate to the Snort rules folder.
+* **Folder Path:** /etc/snort/rules/
+
 7. Open the **local.rules** file, and write a rule to block the malicious traffic
 * **Rule:** reject tcp 10.10.140.29.22 <> any any (msg:"SSH Brutforce Attack!";sid:100001;rev:1;)
 
