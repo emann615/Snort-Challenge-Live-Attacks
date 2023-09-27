@@ -70,11 +70,11 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
-* sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console
+```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
 
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 11. Run Snort in IPS mode again using the following command:
-* sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full
+```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
