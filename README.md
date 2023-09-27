@@ -82,4 +82,70 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 ### Scenario 2
 
+Use the attached VM to finish this task.
+
+**[+] THE NARRATOR**
+
+Good Job! Glad to have you in the team!
+
+**[+] J.A.V.A.**
+
+Congratulations sir. It is inspiring watching you work.
+
+**[+] You**
+
+Thanks team. J.A.V.A. can you do a quick scan for me? We haven't investigated the outbound traffic yet. 
+
+**[+] J.A.V.A.**
+
+Yes, sir. Outbound traffic investigation has begun. 
+
+**[+] THE NARRATOR**
+
+The outbound traffic? Why?
+
+**[+] YOU**
+
+We have stopped some inbound access attempts, so we didn't let the bad guys get in. How about the bad guys who are already inside? Also, no need to mention the insider risks, huh? The dwell time is still around 1-3 months, and I am quite new here, so it is worth checking the outgoing traffic as well.
+
+**[+] J.A.V.A.**
+
+Sir, persistent outbound traffic is detected. Possibly a reverse shell...
+
+**[+] YOU**
+
+You got it!
+
+**[+] J.A.V.A.**
+
+Sir, you need to observe the traffic with Snort and identify the anomaly first. Then you can create a rule to stop the reverse shell. GOOD LUCK!
 10.10.196.55 any <> 10.10.144.156 4444
+
+1. Open **Terminal**, and run Snort in sniffer mode using the following command:
+```sudo snort -Xe```
+
+2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
+3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
+4. Once you have Identified the malicious network trffic write down the the service, protocol, source IP, and source port used.
+* **Service:** SSH
+* **Protocol:** TCP
+* **Source IP:** 10.10.140.29
+* **Soucre Port:** 22
+
+6. Open **File Manager**, and navigate to the Snort rules folder.
+* **Folder Path:** ```/etc/snort/rules/```
+
+7. Open the **local.rules** file, and write a rule to block the malicious traffic.
+* **Rule:** ```drop tcp any any <> any 22 (msg:"SSH Brutforce!";sid:100001;rev:1;)```
+
+8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
+9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
+```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
+
+10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
+11. Run Snort in IPS mode again using the following command:
+```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
+
+12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
+
+* ```THM{81b7fef657f8aaa6e4e200d616738254}```
