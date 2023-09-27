@@ -76,7 +76,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 10. Run Snort in IPS mode again using the following command:
 * sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full
 
-11. Allow snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
+11. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 10.10.140.29:22 -> 10.10.245.36:46656
 
