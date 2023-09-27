@@ -64,7 +64,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 7. Open the **local.rules** file, and write a rule to block the malicious traffic
 * **Rule:** reject tcp 10.10.140.29.22 <> any any (msg:"SSH Brutforce Attack!";sid:100001;rev:1;)
 
-7. Save the **local.rules** file, and your rule will be added to the Snort configuration.
+7. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 8. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command: sudo snort -c /etc/snort/snort.conf -A console
 9. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 10. Run Snort in IPS mode again using the following command: sudo snort -c /etc/snort/snort.conf -A full
