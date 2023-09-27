@@ -82,8 +82,6 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 ### Scenario 2
 
-Use the attached VM to finish this task.
-
 **[+] THE NARRATOR**
 
 Good Job! Glad to have you in the team!
