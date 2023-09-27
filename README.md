@@ -51,8 +51,8 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 **Sir, you need to observe the traffic with Snort and identify the anomaly first. Then you can create a rule to stop the brute-force attack. GOOD LUCK!**
 
-1. Open Terminal, and run Snort in sniffer mode using the following command: sudo snort -v
-2. Let Snort run for about 1 minute then use Ctrl+C to stop Snort.
+1. Open **Terminal**, and run Snort in sniffer mode using the following command: sudo snort -v
+2. Let Snort run for about 1 minute, then use **Ctrl+C** to stop Snort.
 3. Analysze the traffic and look for any anomalies to identify the malicious network traffic.
 4. Once you have Identified the malicious network trffic write down the the service, protocol, source IP, and source port used.
 * **Service:** SSH
@@ -60,15 +60,15 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 * **Source IP:** 10.10.140.29
 * **Soucre Port:** 22
 
-6. Open File manager and navigate to the Snort rules folder.
-7. Open the local.rules file, and write a rule to block the malicious traffic
+6. Open **File Manager** and navigate to the Snort rules folder.
+7. Open the **local.rules** file, and write a rule to block the malicious traffic
 * **Rule:** reject tcp 10.10.140.29.22 <> any any (msg:"SSH Brutforce Attack!";sid:100001;rev:1;)
 
-7. Save the local.rules file, and your rule will be added to the Snort configuration.
-8. Open Terminal, and test your rule by runing Snort in IPS mode using the following command: sudo snort -c /etc/snort/snort.conf -A console
-9. Once you have confirmed your rule is working, use Ctrl+C to stop Snort.
+7. Save the **local.rules** file, and your rule will be added to the Snort configuration.
+8. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command: sudo snort -c /etc/snort/snort.conf -A console
+9. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 10. Run Snort in IPS mode again using the following command: sudo snort -c /etc/snort/snort.conf -A full
-11. Allow snort to run for atleast one minute, and you should recieve the flag file in the Desktop folder.
+11. Allow snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 10.10.140.29:22 -> 10.10.245.36:46656
 
