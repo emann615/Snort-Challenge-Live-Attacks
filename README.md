@@ -50,3 +50,13 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 **[+] J.A.V.A.**
 
 **Sir, you need to observe the traffic with Snort and identify the anomaly first. Then you can create a rule to stop the brute-force attack. GOOD LUCK!**
+
+1. Open Terminal, and run Snort in sniffer mode using the following command: sudo snort -v
+2. Let Snort run for about 1 minute then use Ctrl+C to stop Snort.
+3. Analysze the traffic and look for any anomalies to identify the malicious network traffic.
+
+
+
+### Scenario 2
+
+10.10.196.55 any <> 10.10.144.156 4444
