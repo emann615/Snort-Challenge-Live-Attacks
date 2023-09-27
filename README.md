@@ -65,7 +65,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 * **Folder Path:** ```/etc/snort/rules/```
 
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
-* **Rule:** ```drop tcp any any <> any 22 (msg:"SSH Brutforce!";sid:100001;rev:1;)```
+* **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
 
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
@@ -131,7 +131,7 @@ You got it!
 * **Folder Path:** ```/etc/snort/rules/```
 
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
-* **Rule:** ```drop tcp any any <> any 22 (msg:"SSH Brutforce!";sid:100001;rev:1;)```
+* **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
 
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
