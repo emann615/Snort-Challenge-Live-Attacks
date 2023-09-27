@@ -56,7 +56,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
-4. Once you have Identified the malicious network trffic write down the the service, protocol, source IP, and source port used.
+4. Once you have Identified the malicious network trffic write down the the service, protocol, and port being attacked.
 * **Service:** SSH
 * **Protocol:** TCP
 * **Source IP:** 10.10.140.29
