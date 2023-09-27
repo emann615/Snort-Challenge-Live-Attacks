@@ -122,16 +122,15 @@ You got it!
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
-4. Once you have Identified the malicious network trffic write down the the service, protocol, and port used in the attack.
-* **Service:** SSH
+4. Once you have Identified the malicious network trffic write down the the protocol, and port used in the attack.
 * **Protocol:** TCP
-* **Port:** 22
+* **Port:** 4444
 
 6. Open **File Manager**, and navigate to the Snort rules folder.
 * **Folder Path:** ```/etc/snort/rules/```
 
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
-* **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
+* **Rule:** ```drop tcp any 4444 <> any any (msg:"Reverse Shell!";sid:100001;rev:1;)```
 
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
