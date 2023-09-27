@@ -145,5 +145,3 @@ You got it!
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
-
-10.10.196.55 any <> 10.10.144.156 4444
