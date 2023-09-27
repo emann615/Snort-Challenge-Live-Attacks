@@ -55,7 +55,9 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 ```sudo snort -Xe```
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
-3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
+3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
+* There is alot of suspicious SSH traffic on port 22, indicating a possible brute force attack.
+
 4. Once you have Identified the malicious network trffic write down the the service, protocol, and port used in the attack.
 * **Service:** SSH
 * **Protocol:** TCP
