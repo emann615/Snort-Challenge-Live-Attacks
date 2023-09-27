@@ -78,7 +78,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
-10.10.140.29:22 -> 10.10.245.36:46656
+* THM{81b7fef657f8aaa6e4e200d616738254}
 
 ### Scenario 2
 
