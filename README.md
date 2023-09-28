@@ -112,8 +112,6 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
-* ```THM{81b7fef657f8aaa6e4e200d616738254}```
-
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/a2db2190-67cc-4c2e-9962-508fc283a032" height="80%" width="80%"/>
 </br>
 </br>
@@ -211,8 +209,6 @@ You got it!
 </br>
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
-
-* ```THM{81b7fef657f8aaa6e4e200d616738254}```
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/bbcce42d-e98a-4df6-af5c-bcc5d2bb12cd" height="80%" width="80%"/>
 </br>
