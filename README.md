@@ -81,7 +81,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
 * **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
 
-<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/4d6f813c-39f9-40ec-b3a4-7749134e4eac" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/b0aafce6-8c6d-40d8-a260-1ed20ee8c43e" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -95,7 +95,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 
-<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/9120207e-eecb-4f64-a37f-941074abcbd4" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/9a22f8f6-1dc8-4a52-bebe-cef59f6b1e98" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -110,7 +110,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
 
-<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/ace20fcd-2a67-4971-bef0-1d8c7f3b44a2" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/a2db2190-67cc-4c2e-9962-508fc283a032" height="80%" width="80%"/>
 </br>
 </br>
 
