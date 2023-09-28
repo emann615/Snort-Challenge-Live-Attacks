@@ -3,6 +3,13 @@
 ## Desciption
 Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS) developed and maintained by Martin Roesch and the Cisco Talos team. In this lab, I will run through two scenariors using Snort to identify and block malicious network traffic.
 
+## Table of Contents
+
+   * [Languages and Utilities Used](#Languages-and-Utilities-Used)
+   * [Environments Used](#Environments-Used)
+   * [Scenario 1](Scenario-1)
+   * [Scenario 2](Scenario-2)
+
 ## Languages and Utilities Used
 
 * **Snort** 
