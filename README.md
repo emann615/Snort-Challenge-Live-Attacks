@@ -89,20 +89,20 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/3417d743-0e89-45dc-a54e-e47720ff81e8" height="80%" width="80%"/>
 </br>
 </br>
 
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/9120207e-eecb-4f64-a37f-941074abcbd4" height="80%" width="80%"/>
 </br>
 </br>
 
 11. Run Snort in IPS mode again using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/c30ad434-1cd7-4701-b907-825a4c1d0a2e" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -110,7 +110,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/ace20fcd-2a67-4971-bef0-1d8c7f3b44a2" height="80%" width="80%"/>
 </br>
 </br>
 
