@@ -54,7 +54,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 1. Open **Terminal**, and run Snort in sniffer mode using the following command:
 ```sudo snort -Xe```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/d356e93f-dec6-43da-b946-7485a01b8045" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -62,7 +62,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
 * There is alot of suspicious SSH traffic on port 22, indicating a possible brute force attack.
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/ce53d627-5c11-4aee-a82c-c1427945d5af" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -74,14 +74,14 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 6. Open **File Manager**, and navigate to the Snort rules folder.
 * **Folder Path:** ```/etc/snort/rules/```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/418aaf53-a960-4f1b-a9c2-a91724e92ce1" height="80%" width="80%"/>
 </br>
 </br>
 
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
 * **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/4d6f813c-39f9-40ec-b3a4-7749134e4eac" height="80%" width="80%"/>
 </br>
 </br>
 
