@@ -155,7 +155,7 @@ You got it!
 1. Open **Terminal**, and run Snort in sniffer mode using the following command:
 ```sudo snort -Xe```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/b052e9b8-6ebd-4b24-9eb9-3b5a065d3cc0" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -163,7 +163,7 @@ You got it!
 3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
 * There is a lot of suspicious traffic over port 4444.
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/fe3a0f8b-bebd-4100-b9df-603885185750" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -174,10 +174,14 @@ You got it!
 6. Open **File Manager**, and navigate to the Snort rules folder.
 * **Folder Path:** ```/etc/snort/rules/```
 
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/a0d53372-4690-4645-afdc-5d3f55eda380" height="80%" width="80%"/>
+</br>
+</br>
+
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
 * **Rule:** ```drop tcp any 4444 <> any any (msg:"Reverse Shell!";sid:100001;rev:1;)```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/3478520c-3dc5-4d28-9c6a-3d41df446adf" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -185,20 +189,20 @@ You got it!
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/fb912aaa-36d2-4a4b-ae36-cec776b630bb" height="80%" width="80%"/>
 </br>
 </br>
 
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/1d7de5e8-269c-43e7-98e6-0164f70964bd" height="80%" width="80%"/>
 </br>
 </br>
 
 11. Run Snort in IPS mode again using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/7fd1254b-2a91-4e35-9f69-025eb9d7968b" height="80%" width="80%"/>
 </br>
 </br>
 
@@ -206,6 +210,6 @@ You got it!
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
 
-<img src="#" height="80%" width="80%"/>
+<img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/bbcce42d-e98a-4df6-af5c-bcc5d2bb12cd" height="80%" width="80%"/>
 </br>
 </br>
