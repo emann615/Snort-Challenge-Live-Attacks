@@ -54,9 +54,17 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 1. Open **Terminal**, and run Snort in sniffer mode using the following command:
 ```sudo snort -Xe```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
 * There is alot of suspicious SSH traffic on port 22, indicating a possible brute force attack.
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
 
 4. Once you have Identified the malicious network trffic write down the the service, protocol, and port used in the attack.
 * **Service:** SSH
@@ -66,20 +74,45 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 6. Open **File Manager**, and navigate to the Snort rules folder.
 * **Folder Path:** ```/etc/snort/rules/```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
 * **Rule:** ```drop tcp any 22 <> any any (msg:"SSH Brutforce!";sid:100001;rev:1;)```
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
 
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 11. Run Snort in IPS mode again using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
 
 ### Scenario 2
 
@@ -122,8 +155,18 @@ You got it!
 1. Open **Terminal**, and run Snort in sniffer mode using the following command:
 ```sudo snort -Xe```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
+* There is a lot of suspicious traffic over port 4444.
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 4. Once you have Identified the malicious network trffic write down the the protocol, and port used in the attack.
 * **Protocol:** TCP
 * **Port:** 4444
@@ -134,14 +177,35 @@ You got it!
 7. Open the **local.rules** file, and write a rule to block the malicious traffic.
 * **Rule:** ```drop tcp any 4444 <> any any (msg:"Reverse Shell!";sid:100001;rev:1;)```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 8. Save the **local.rules** file, and your rule will be added to your Snort configuration.
 9. Open **Terminal**, and test your rule by runing Snort in IPS mode using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A console```
 
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 10. Once you have confirmed your rule is working, use **Ctrl+C** to stop Snort.
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
+
 11. Run Snort in IPS mode again using the following command:
 ```sudo snort -c /etc/snort/snort.conf -q -Q --daq afpacket -i eth0:eth1 -A full```
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
 
 12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
 
 * ```THM{81b7fef657f8aaa6e4e200d616738254}```
+
+<img src="#" height="80%" width="80%"/>
+</br>
+</br>
