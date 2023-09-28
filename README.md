@@ -60,14 +60,13 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
-* There is alot of suspicious SSH traffic on port 22, indicating a possible brute force attack.
+* There is alot of suspicious SSH traffic over port 22, indicating a possible brute force attack.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/ce53d627-5c11-4aee-a82c-c1427945d5af" height="80%" width="80%"/>
 </br>
 </br>
 
-4. Once you have Identified the malicious network trffic write down the the service, protocol, and port used in the attack.
-* **Service:** SSH
+4. Once you have Identified the malicious network trffic write down the the protocol and port used in the attack.
 * **Protocol:** TCP
 * **Port:** 22
 
@@ -161,13 +160,13 @@ You got it!
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
-* There is a lot of suspicious traffic over port 4444.
+* There is a lot of suspicious outbound traffic over port 4444.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/fe3a0f8b-bebd-4100-b9df-603885185750" height="80%" width="80%"/>
 </br>
 </br>
 
-4. Once you have Identified the malicious network trffic write down the the protocol, and port used in the attack.
+4. Once you have Identified the malicious network trffic write down the protocol and port used in the attack.
 * **Protocol:** TCP
 * **Port:** 4444
 
