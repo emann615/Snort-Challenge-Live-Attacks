@@ -16,7 +16,7 @@ Snort is an open-source, rule-based Network Intrusion Detection and Prevention S
 
 ## Environments Used
 
-* **Ubuntu**
+* **Ubuntu 18.04.6 LTS**
 
 ## Walk-Through
 
