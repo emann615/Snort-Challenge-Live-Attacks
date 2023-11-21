@@ -162,14 +162,14 @@ You got it!
 </br>
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
-3. Analysze the traffic, and look for any anomalies to identify the malicious network traffic.
+3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
 * There is a lot of suspicious outbound traffic over port 4444.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/fe3a0f8b-bebd-4100-b9df-603885185750" height="80%" width="80%"/>
 </br>
 </br>
 
-4. Once you have Identified the malicious network trffic write down the protocol and port used in the attack.
+4. Once you have identified the malicious network traffic write down the protocol and port used in the attack.
 * **Protocol:** TCP
 * **Port:** 4444
 
@@ -208,7 +208,7 @@ You got it!
 </br>
 </br>
 
-12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
+12. Allow Snort to run for at least one minute, and you should recieve the flag file in the **Desktop** folder.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/bbcce42d-e98a-4df6-af5c-bcc5d2bb12cd" height="80%" width="80%"/>
 </br>
