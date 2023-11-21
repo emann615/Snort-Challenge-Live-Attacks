@@ -1,7 +1,7 @@
 # Snort Challenge: Live Attacks
 
-## Desciption
-Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS) developed and maintained by Martin Roesch and the Cisco Talos team. In this lab, I will run through two scenariors using Snort to identify and block malicious network traffic.
+## Description
+Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS) developed and maintained by Martin Roesch and the Cisco Talos team. In this lab, I will run through two scenarios using Snort to identify and block malicious network traffic.
 
 ## Table of Contents
 
@@ -65,13 +65,13 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 
 2. Let Snort run for about 1 minute to collect some of the network traffic, then use **Ctrl+C** to stop Snort.
 3. Analyze the traffic, and look for any anomalies to identify the malicious network traffic.
-* There is alot of suspicious SSH traffic over port 22, indicating a possible brute force attack.
+* There is a lot of suspicious SSH traffic over port 22, indicating a possible brute force attack.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/ce53d627-5c11-4aee-a82c-c1427945d5af" height="80%" width="80%"/>
 </br>
 </br>
 
-4. Once you have Identified the malicious network trffic write down the the protocol and port used in the attack.
+4. Once you have Identified the malicious network traffic write down the the protocol and port used in the attack.
 * **Protocol:** TCP
 * **Port:** 22
 
@@ -110,7 +110,7 @@ This is not a comic book! Would you mind going and checking what's going on! Ple
 </br>
 </br>
 
-12. Allow Snort to run for atleast one minute, and you should recieve the flag file in the **Desktop** folder.
+12. Allow Snort to run for at least one minute, and you should receive the flag file in the **Desktop** folder.
 
 <img src="https://github.com/emann615/Snort-Lab-Network-Traffic-Analysis/assets/117882385/a2db2190-67cc-4c2e-9962-508fc283a032" height="80%" width="80%"/>
 </br>
